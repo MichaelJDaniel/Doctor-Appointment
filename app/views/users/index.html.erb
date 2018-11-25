@@ -1,5 +1,4 @@
-<div class="charts">
-  <h1 class="header">My List of Appointments</h1>
+<h1 class="header">Gotham City Hospital Appoitment Center</h1>
   <div class="boards">
   <% @users.each do |user| %>
     <%= link_to user.full_name, user_path(user), class:"user chart"%>
