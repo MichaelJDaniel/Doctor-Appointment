@@ -1,6 +1,6 @@
 class PhysiciansController < ApplicationController
   def index
-    @physicians = Physicians.all
+    @physicians = Physician.all
   end
 
   def show
@@ -11,7 +11,7 @@ class PhysiciansController < ApplicationController
   end
 
   def create 
-    @physician = Physician.create(course_params)
+    @physician = Physician.create(physician_params)
 
     if @physician.save
       redirect_to @physician

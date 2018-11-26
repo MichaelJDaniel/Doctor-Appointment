@@ -1,16 +1,10 @@
 <nav>
-  <ul>
-    <li>
+  <div class="navigation">
+    <div class="nav-links">
       <%= link_to 'Doctors', physicians_path %>
-    </li>
-    <li>
       <%= link_to 'Add Doctors', new_physician_path %>
-    </li>
-    <li>
-      <%= link_to 'Users', users_path %>
-    </li>
-    <li>
-      <%= link_to 'Add User', new_user_path %>
-    </li>
-  </ul>
+      <%= link_to 'Patients', users_path %>
+      <%= link_to 'Add Patient', new_user_path %>
+    </div>
+  </div>
 </nav>

@@ -1,7 +1,6 @@
 <h1>Physicians</h1>
 <%= link_to 'Add Physicians', new_physician_path %>
-<hr />
-<h2><%= @physicians.length <= 0 ? "No Physicians" : %></h2>
+<br />
 <ul>
   <% @physicians.each do |physician| %>
     <li>
